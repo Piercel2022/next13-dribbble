@@ -10,7 +10,7 @@ type ColumnProps = {
 
 const FooterColumn = ({ title, links }: ColumnProps) => (
     <div className="footer_column">
-        <h2 className="font-semibold">{title}</h2>
+        <h4 className="font-semibold">{title}</h4>
         <ul className="flex flex-col gap-2 font-normal">
             {links.map((link) => <Link href="/" key={link}>{link}</Link>)}
         </ul>
@@ -27,7 +27,7 @@ const Footer = () => (
                     Flexibble is the world&apos;s leading community for creatives to share, grow, and get hired.
                 </p>
             </div>
-            <div className="flex-1 flex  flex-col gap-4">
+            <div className="flex flex-wrap  gap-12">
                 <FooterColumn title={footerLinks[0].title} links={footerLinks[0].links} />
 
                 <div className="flex-1 flex flex-col gap-4">
